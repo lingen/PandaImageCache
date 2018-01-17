@@ -12,10 +12,10 @@
 		6773E2621F3EEB0A006ABAAA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6773E2601F3EEB0A006ABAAA /* Main.storyboard */; };
 		6773E2641F3EEB0A006ABAAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6773E2631F3EEB0A006ABAAA /* Assets.xcassets */; };
 		6773E2671F3EEB0A006ABAAA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6773E2651F3EEB0A006ABAAA /* LaunchScreen.storyboard */; };
-		6773E29A1F3EEDE7006ABAAA /* PandaImageCache.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6773E2851F3EEB44006ABAAA /* PandaImageCache.framework */; };
-		6773E29B1F3EEDE7006ABAAA /* PandaImageCache.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6773E2851F3EEB44006ABAAA /* PandaImageCache.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		6773E2A21F3EEE52006ABAAA /* PandaHttpSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6773E2A11F3EEE52006ABAAA /* PandaHttpSwift.framework */; };
-		6773E2A41F3EEE62006ABAAA /* PandaHttpSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6773E2A11F3EEE52006ABAAA /* PandaHttpSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		67F9BBD31F3FEE57001E0962 /* PandaHttpSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67F9BBD21F3FEE57001E0962 /* PandaHttpSwift.framework */; };
+		67F9BBD41F3FEE57001E0962 /* PandaHttpSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 67F9BBD21F3FEE57001E0962 /* PandaHttpSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		67F9BBD61F3FEF0F001E0962 /* PandaImageCache.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67F9BBD51F3FEF0F001E0962 /* PandaImageCache.framework */; };
+		67F9BBD71F3FEF0F001E0962 /* PandaImageCache.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 67F9BBD51F3FEF0F001E0962 /* PandaImageCache.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,8 +25,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				6773E29B1F3EEDE7006ABAAA /* PandaImageCache.framework in Embed Frameworks */,
-				6773E2A41F3EEE62006ABAAA /* PandaHttpSwift.framework in Embed Frameworks */,
+				67F9BBD71F3FEF0F001E0962 /* PandaImageCache.framework in Embed Frameworks */,
+				67F9BBD41F3FEE57001E0962 /* PandaHttpSwift.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -43,6 +43,8 @@
 		6773E2681F3EEB0A006ABAAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6773E2851F3EEB44006ABAAA /* PandaImageCache.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PandaImageCache.framework; path = "../../../../Library/Developer/Xcode/DerivedData/PandaImageCache-cwqhslqytzzumphlapzkbishmcbb/Build/Products/Debug-iphonesimulator/PandaImageCache.framework"; sourceTree = "<group>"; };
 		6773E2A11F3EEE52006ABAAA /* PandaHttpSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PandaHttpSwift.framework; path = Example/PandaHttpSwift.framework; sourceTree = "<group>"; };
+		67F9BBD21F3FEE57001E0962 /* PandaHttpSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PandaHttpSwift.framework; path = Carthage/Build/iOS/PandaHttpSwift.framework; sourceTree = "<group>"; };
+		67F9BBD51F3FEF0F001E0962 /* PandaImageCache.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PandaImageCache.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,8 +52,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6773E29A1F3EEDE7006ABAAA /* PandaImageCache.framework in Frameworks */,
-				6773E2A21F3EEE52006ABAAA /* PandaHttpSwift.framework in Frameworks */,
+				67F9BBD61F3FEF0F001E0962 /* PandaImageCache.framework in Frameworks */,
+				67F9BBD31F3FEE57001E0962 /* PandaHttpSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,7 +63,9 @@
 		6773E2501F3EEB0A006ABAAA = {
 			isa = PBXGroup;
 			children = (
+				67F9BBD51F3FEF0F001E0962 /* PandaImageCache.framework */,
 				6773E2A11F3EEE52006ABAAA /* PandaHttpSwift.framework */,
+				67F9BBD21F3FEE57001E0962 /* PandaHttpSwift.framework */,
 				6773E25B1F3EEB0A006ABAAA /* Example */,
 				6773E25A1F3EEB0A006ABAAA /* Products */,
 				6773E2841F3EEB44006ABAAA /* Frameworks */,
@@ -311,8 +315,10 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Example",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = Example/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.openpanda.Example;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -329,8 +335,10 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Example",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = Example/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.openpanda.Example;
 				PRODUCT_NAME = "$(TARGET_NAME)";

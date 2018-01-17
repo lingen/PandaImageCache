@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		6773E24A1F3EDF6E006ABAAA /* FileImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6773E2491F3EDF6E006ABAAA /* FileImageCache.swift */; };
 		6773E24C1F3EE680006ABAAA /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6773E24B1F3EE680006ABAAA /* ImageCache.swift */; };
-		6773E24F1F3EE7C5006ABAAA /* PandaHttpSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6773E24E1F3EE7C5006ABAAA /* PandaHttpSwift.framework */; };
 		6773E27E1F3EEB29006ABAAA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6773E2701F3EEB29006ABAAA /* AppDelegate.swift */; };
 		6773E27F1F3EEB29006ABAAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6773E2711F3EEB29006ABAAA /* Assets.xcassets */; };
 		6773E2801F3EEB29006ABAAA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6773E2721F3EEB29006ABAAA /* LaunchScreen.storyboard */; };
@@ -21,6 +20,7 @@
 		67D1868F1F3ED5F500206BDD /* PandaImageCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 67D186811F3ED5F500206BDD /* PandaImageCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		67D186991F3ED64500206BDD /* ImageCacheProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D186981F3ED64500206BDD /* ImageCacheProtocol.swift */; };
 		67D1869B1F3ED6D500206BDD /* MemoryImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D1869A1F3ED6D500206BDD /* MemoryImageCache.swift */; };
+		67F9BBD11F3FED7A001E0962 /* PandaHttpSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67F9BBD01F3FED7A001E0962 /* PandaHttpSwift.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,7 +43,6 @@
 /* Begin PBXFileReference section */
 		6773E2491F3EDF6E006ABAAA /* FileImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileImageCache.swift; sourceTree = "<group>"; };
 		6773E24B1F3EE680006ABAAA /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
-		6773E24E1F3EE7C5006ABAAA /* PandaHttpSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PandaHttpSwift.framework; sourceTree = "<group>"; };
 		6773E2701F3EEB29006ABAAA /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6773E2711F3EEB29006ABAAA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6773E2731F3EEB29006ABAAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -59,6 +58,7 @@
 		67D1868E1F3ED5F500206BDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		67D186981F3ED64500206BDD /* ImageCacheProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCacheProtocol.swift; sourceTree = "<group>"; };
 		67D1869A1F3ED6D500206BDD /* MemoryImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryImageCache.swift; sourceTree = "<group>"; };
+		67F9BBD01F3FED7A001E0962 /* PandaHttpSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PandaHttpSwift.framework; path = Carthage/Build/iOS/PandaHttpSwift.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,7 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6773E24F1F3EE7C5006ABAAA /* PandaHttpSwift.framework in Frameworks */,
+				67F9BBD11F3FED7A001E0962 /* PandaHttpSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,14 +81,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		6773E24D1F3EE7B7006ABAAA /* Framework */ = {
-			isa = PBXGroup;
-			children = (
-				6773E24E1F3EE7C5006ABAAA /* PandaHttpSwift.framework */,
-			);
-			path = Framework;
-			sourceTree = "<group>";
-		};
 		6773E26E1F3EEB29006ABAAA /* Example */ = {
 			isa = PBXGroup;
 			children = (
@@ -123,10 +115,10 @@
 			isa = PBXGroup;
 			children = (
 				6773E26E1F3EEB29006ABAAA /* Example */,
-				6773E24D1F3EE7B7006ABAAA /* Framework */,
 				67D186801F3ED5F500206BDD /* PandaImageCache */,
 				67D1868B1F3ED5F500206BDD /* PandaImageCacheTests */,
 				67D1867F1F3ED5F500206BDD /* Products */,
+				67F9BBCF1F3FED7A001E0962 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -159,6 +151,14 @@
 				67D1868E1F3ED5F500206BDD /* Info.plist */,
 			);
 			path = PandaImageCacheTests;
+			sourceTree = "<group>";
+		};
+		67F9BBCF1F3FED7A001E0962 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				67F9BBD01F3FED7A001E0962 /* PandaHttpSwift.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -465,9 +465,11 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Framework",
 					"$(PROJECT_DIR)/Example",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = PandaImageCache/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.openpanda.PandaImageCache;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -492,9 +494,11 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Framework",
 					"$(PROJECT_DIR)/Example",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = PandaImageCache/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.openpanda.PandaImageCache;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
